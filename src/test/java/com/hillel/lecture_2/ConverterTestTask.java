@@ -28,8 +28,8 @@ public class ConverterTestTask {
 
     @Test
     public void celsiusToKelvinTest() {
-        double expectedResult = 283.16;
-        assertEquals(temperatureConverter.celsiusToKelvin(10), expectedResult);
+        double expectedResult = 283.16;  /*You had mistake 1degC == 273.15*/
+        assertEquals(temperatureConverter.celsiusToKelvin(10), expectedResult, "maybe You had mistake 1degC == 273.15 not 273.16");
     }
 
     @Test
