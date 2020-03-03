@@ -43,7 +43,7 @@ public class FormulasTestTask {
     public void formula13Test() {
         double x = 29;
         double expectedResult = 0.2631086711629021;
-        assertEquals(formulas.calculate13Formula(x), expectedResult);
+        assertEquals(formulas.calculate13Formula(x), expectedResult,"!!!Have some dif in exp res in last number");
     }
 
 }
