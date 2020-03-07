@@ -12,7 +12,13 @@ public class DiscountCountChecker {
 
 //        TODO implements result
         double result = 0.0;
-
+        double discPrice = 1000d;
+        if(price > discPrice){
+            result = price-(price*0.15);
+        }
+        else{
+            System.out.println("You don't have discount");
+        }
         return result;
     }
 }
