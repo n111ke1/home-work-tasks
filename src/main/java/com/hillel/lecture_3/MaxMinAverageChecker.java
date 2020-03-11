@@ -12,7 +12,17 @@ public class MaxMinAverageChecker {
 
 //        TODO implements result
         int result = 0;
-
+        if (a != b || b != c) {
+            if(a > b && a > c){
+                 result = a;
+             }
+             else if(b>a && b>c){
+                 result = b;
+             }
+             else if(c>a && c>b){
+                 result = c;
+             }
+        }
         return result;
     }
 
@@ -21,7 +31,17 @@ public class MaxMinAverageChecker {
 
 //        TODO implements result
         int result = 0;
-
+        if (a != b || b != c) {
+            if(a>b && a<c || a<b && a>c){
+                 result = a;
+             }
+             else if(b>a && b<c || b<a && b>c){
+                 result = b;
+             }
+             else {
+                 result = c;
+             }
+        }
         return result;
     }
 
@@ -30,7 +50,17 @@ public class MaxMinAverageChecker {
 
 //        TODO implements result
         int result = 0;
-
+        if (a != b || b != c) {
+            if(a<b && a<c){
+                result = a;
+            }
+            else if(b<a && b<c){
+                result = b;
+            }
+            else if(c<a && c<b){
+                result = c;
+            }
+        }
         return result;
     }
 }
