@@ -12,7 +12,12 @@ public class PalindromeChecker {
 
 //        TODO implements result
         boolean result = false;
-
+        char str[] = value.toCharArray();
+        String revStr = "";
+        for (int i = str.length - 1; i >= 0; i--) {
+                revStr += value.charAt(i);
+        result = revStr.equalsIgnoreCase(value);
+        }
         return result;
     }
 

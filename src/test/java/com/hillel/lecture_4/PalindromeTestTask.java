@@ -8,7 +8,7 @@ import static org.testng.Assert.assertEquals;
 /**
  * Написать программу, которая проверяет является ли строка палиндромом (использовать массив символов - char string[])
  */
-public class PalindromeTestTask {
+public class   PalindromeTestTask {
 
     private PalindromeChecker palindromeChecker = new PalindromeChecker();
 

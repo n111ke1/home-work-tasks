@@ -12,7 +12,11 @@ public class ReverseStringChecker {
 
 //        TODO implements result
         String result = "";
-
+        StringBuilder sb = new StringBuilder();
+        char[]str = value.toCharArray();
+        for (int i = str.length -1; i >= 0 ; i--) {
+            result = String.valueOf(sb.append(value.charAt(i)));
+        }
         return result;
     }
 
