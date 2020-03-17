@@ -11,7 +11,10 @@ public class SortingChecker {
     public int[] fromMinToMax(int[] values) {
 
 //        TODO implements result
-        int[] result = new int[0];
+       return getMinToMax(values);
+
+    }
+    public static int [] getMinToMax(int[] values){
         int indexMin = 0;
         int valueMin = 0;
         for (int i = 0; i < values.length ; i++) {
@@ -31,8 +34,7 @@ public class SortingChecker {
         for (int i:values) {
         System.out.println(i);
         }
-        result=values;
-        return result;
+        return values;
     }
 
     @Step

@@ -20,21 +20,29 @@ public class BinaryToDecimalChecker {
         int result = 0;
         StringBuilder sb = new StringBuilder();
         do {
-            sb.append(value%2);
-            value = value/2;
+            sb.append(value % 2);
+            value = value / 2;
         }
-        while ( value != 0);
-            result = Integer.parseInt((sb.reverse().toString()));
+        while (value != 0);
+        result = Integer.parseInt((sb.reverse().toString()));
         return result;
     }
+
+
+
+
 
     @Step
     public int fromBinaryToDecimal(int value) {
 
 //        TODO implements result
-        int result = 0;
+        int result = getResult(value);
+        return  result;
+    }
+    public static int getResult(int value){
         String str = String.valueOf(value);
-        for(int i=0; i < str.length(); i++){
+        int result = 0;
+        for(int i = 0; i < str.length(); i++){
             if(str.charAt(i)== '1'){
                 result += pow(2,str.length()-1-i);
             }

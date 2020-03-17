@@ -16,11 +16,13 @@ public class SquareAndCircleChecker {
     public String checkCircleInSquare(double circleArea, double squareArea) {
 
 //        TODO implements result
-        String result = "";
-//        double diag = sqrt(2*squareArea)/2;
-//        double radius = sqrt(circleArea/PI)/2;
+        return getResult(circleArea, squareArea);
+    }
+
+    public static String getResult(double circleArea, double squareArea){
         double back = sqrt(squareArea)/2;
         double radius = sqrt(circleArea/PI);
+        String result = "";
          if (radius <= back) {
             result = ("The circle is in the square");
         } else {
@@ -34,10 +36,12 @@ public class SquareAndCircleChecker {
     public String checkSquareInCircle(double circleArea, double squareArea) {
 
 //        TODO implements result
-        String result = "";
+        return getRes(circleArea, squareArea);
+    }
+    public static String getRes(double circleArea, double squareArea){
         double diag = sqrt(2*squareArea);
         double D = 2*sqrt(circleArea/PI);
-
+        String result = "";
         if (diag <= D) {
             result = ("The square is in the circle");
         } else {
@@ -47,3 +51,4 @@ public class SquareAndCircleChecker {
     }
 
 }
+

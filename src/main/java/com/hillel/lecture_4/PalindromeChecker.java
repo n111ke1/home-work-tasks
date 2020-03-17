@@ -9,16 +9,18 @@ public class PalindromeChecker {
 
     @Step
     public boolean isPalindrome(String value) {
-
 //        TODO implements result
-        boolean result = false;
+        boolean result = checkString(value);
+        return result;
+    }
+
+    public static boolean checkString(String value){
         char str[] = value.toCharArray();
         String revStr = "";
         for (int i = str.length - 1; i >= 0; i--) {
                 revStr += value.charAt(i);
-        result = revStr.equalsIgnoreCase(value);
         }
-        return result;
+        return  revStr.equalsIgnoreCase(value);
     }
 
 }
