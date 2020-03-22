@@ -25,6 +25,14 @@ package com.hillel.basic.exam;
 public class SequenceSum {
 
     public static String showSequence(int value) {
-        return null;
+            String ses = "";
+            String sum = "";
+            for (int i = 0; i <= value; i++) {
+                ses = ses  + i +"+";
+                sum = sum + i;
+            }
+
+            return ses + sum;
+        }
     }
-}
+
