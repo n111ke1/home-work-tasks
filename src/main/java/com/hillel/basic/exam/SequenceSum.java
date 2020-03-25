@@ -26,13 +26,13 @@ public class SequenceSum {
 
     public static String showSequence(int value) {
             String ses = "";
-            String sum = "";
+            int sum = 0;
             for (int i = 0; i <= value; i++) {
-                ses = ses  + i +"+";
+                ses += i + "+";
                 sum = sum + i;
             }
-
-            return ses + sum;
+            ses = ses.substring(0,ses.length()-1);
+            return ses + " = " + sum;
         }
     }
 

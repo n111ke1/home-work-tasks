@@ -27,11 +27,9 @@ public class Dubster {
 
     public static String songDecoder(String song) {
         String oldSong = "";
-        if(song.startsWith("R")) {
+        String twoSpace = " +";
             oldSong = song.replaceAll("WUB", " ");
-        }else
-            oldSong = song.replaceAll("WUB", "");
-
+            oldSong = oldSong.trim().replaceAll(twoSpace," ");
         return oldSong;
     }
 }
