@@ -13,6 +13,7 @@ public class LetterRemovalChecker {
 
 //        TODO implements result
         String result = "";
+       result= sentence.replaceAll(letterFoRemove,"");
 
         return result;
     }

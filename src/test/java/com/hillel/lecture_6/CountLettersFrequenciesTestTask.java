@@ -15,7 +15,7 @@ public class CountLettersFrequenciesTestTask {
 
     @Test(dataProvider = "stringProvider")
     public void countLettersFrequenciesTest(String sentence, char letter, String expectedResult) {
-        assertEquals(countLettersFrequenciesChecker.countLettersFrequencies(sentence, letter), expectedResult); ;
+        assertEquals(countLettersFrequenciesChecker.countLettersFrequencies(sentence, letter), expectedResult);
     }
 
 

@@ -12,9 +12,15 @@ public class CountWordsOfEachLengthChecker {
 
 //        TODO implements result
         int result = 0;
-
+        String[] sen = sentence.replaceAll("[^a-zA-Z ]", "").split(" ");
+        for (String i :sen) {
+            if(i.length() == wordLength){
+            result++;
+            }
+        }
         return result;
     }
-
-
 }
+
+
+

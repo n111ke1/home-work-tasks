@@ -14,7 +14,7 @@ public class CountWordsTestTask {
 
     @Test(dataProvider = "sentenceProvider")
     public void countWordsInSentenceTest(String sentence, int expectedResult) {
-        assertEquals(countWordsChecker.countNumberOfWorld(sentence), expectedResult); ;
+        assertEquals(countWordsChecker.countNumberOfWorld(sentence), expectedResult);
     }
 
     @DataProvider(name = "sentenceProvider")

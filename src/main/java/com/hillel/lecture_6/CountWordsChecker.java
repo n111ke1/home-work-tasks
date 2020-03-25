@@ -9,10 +9,12 @@ public class CountWordsChecker {
 
     @Step
     public int countNumberOfWorld(String sentence) {
-
-//        TODO implements result
         int result = 0;
-
+        String[] word =sentence.split(" ");
+        for (int i = 0; i < word.length ; i++) {
+            result++;
+        }
+//        TODO implements result
         return result;
     }
 
