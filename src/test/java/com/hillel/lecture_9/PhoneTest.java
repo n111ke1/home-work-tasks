@@ -59,8 +59,15 @@ public class PhoneTest {
 
     }
 
+  @Test
+  public void checkObjects(){
+    lendlinePhone.equals(cellPhone);
+  }
 
-
+  @Test
+  public void checkHash(){
+    Assert.assertTrue(lendlinePhone.hashCode() == cellPhone.hashCode());
+  }
 
 
     @DataProvider(name = "phoneType")

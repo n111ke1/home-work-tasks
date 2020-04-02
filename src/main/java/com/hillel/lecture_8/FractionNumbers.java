@@ -2,14 +2,15 @@ package com.hillel.lecture_8;
 
 import io.qameta.allure.Step;
 import org.apache.commons.lang3.math.Fraction;
+
 public class FractionNumbers {
 
     private int numerator;
-    private int denomenator;
+    private int denominator;
 
-    public FractionNumbers(int numerator, int denomenator){
+    public FractionNumbers(int numerator, int denominator){
         this.numerator = numerator;
-        this.denomenator = denomenator;
+        this.denominator = denominator;
     }
 
     @Step
@@ -17,37 +18,48 @@ public class FractionNumbers {
         return numerator;
     }
     @Step
-    public int getDenomenator() {
-        return denomenator;
+    public int getDenominator() {
+        return denominator;
     }
     @Step
     public void setNumerator(int numerator) {
         this.numerator = numerator;
     }
     @Step
-    public void setDenomenator(int denomenator) {
-        this.denomenator = denomenator;
+    public void setDenominator(int denominator) {
+        this.denominator = denominator;
     }
 
     @Step
     public int plus(){
-        return numerator + denomenator;
+        return numerator + denominator;
+
     }
+
+//    @Step
+//    public Fraction add(Fraction fractionTwo) {
+//        int numer = (numerator * fractionTwo.getDenominator()) +
+//                (fractionTwo.getNumerator() * denominator);
+//        int denr = denominator * fractionTwo.getDenominator();
+//        return Fraction.getFraction(numer, denr);
+//    }
+
+
 
     @Step
     public int minus(){
-        return numerator - denomenator;
+        return numerator - denominator;
     }
 
     @Step
     public int multiplay() {
-        return numerator * denomenator;
+        return numerator * denominator;
     }
     @Step
     public double divide(){
         double res = 0;
         double num = numerator;
-        double den = denomenator;
+        double den = denominator;
         if(den != 0){
             res =  num / den;
         }else {
@@ -60,6 +72,6 @@ public class FractionNumbers {
     @Step
     @Override
     public String toString() {
-       return "Fraction is: " + String.valueOf(Fraction.getFraction(numerator, denomenator));
+       return "Fraction is: " + String.valueOf(Fraction.getFraction(numerator, denominator));
     }
 }

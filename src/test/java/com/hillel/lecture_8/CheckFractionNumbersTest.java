@@ -1,5 +1,6 @@
 package com.hillel.lecture_8;
 
+import org.apache.commons.lang3.math.Fraction;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -13,6 +14,16 @@ public class CheckFractionNumbersTest {
     FractionNumbers fractionNumbers = new FractionNumbers(numenator, denamenator);
         assertEquals(fractionNumbers.plus(),result);
     }
+
+//    @Test(dataProvider = "fractionProvider")
+//    public void plusFractionTest(int numenator, int denamenator , Fraction fraction){
+//        FractionNumbers fractionNumbers = new FractionNumbers(numenator, denamenator);
+//        fractionNumbers.add(fraction );
+////        assertEquals(fractionNumbers.plusFraction(fraction),res);
+//    }
+
+
+
 
     @Test(dataProvider = "intProviderForMinus")
     public void minusTest(int numenator, int denamenator , int result){
@@ -37,23 +48,27 @@ public class CheckFractionNumbersTest {
         FractionNumbers fractionNumbers = new FractionNumbers(3, 2);
         fractionNumbers.setNumerator(5);
         assertEquals(fractionNumbers.getNumerator(), 5);
-        assertEquals(fractionNumbers.getDenomenator(), 2);
+        assertEquals(fractionNumbers.getDenominator(), 2);
     }
 
     @Test
     public void getAnotherDenumerator() {
         FractionNumbers fractionNumbers = new FractionNumbers(3, 2);
-        fractionNumbers.setDenomenator(5);
+        fractionNumbers.setDenominator(5);
         assertEquals(fractionNumbers.getNumerator(), 3);
-        assertEquals(fractionNumbers.getDenomenator(), 5);
+        assertEquals(fractionNumbers.getDenominator(), 5);
     }
 
     @Test
     public void getOutput() {
         FractionNumbers fractionNumbers = new FractionNumbers(1, 2);
         fractionNumbers.toString().equals( "Fraction is: " + fractionNumbers.getNumerator() + "/"
-                +fractionNumbers.getDenomenator());
+                +fractionNumbers.getDenominator());
     }
+
+
+
+
 
 
     @DataProvider(name = "intProvider")

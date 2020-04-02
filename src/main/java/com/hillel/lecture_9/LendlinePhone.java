@@ -1,7 +1,7 @@
 package com.hillel.lecture_9;
 
-
 public class LendlinePhone extends Phone {
+
 
     private String phoneNumber;
 

@@ -2,13 +2,13 @@ package com.hillel.lecture_9;
 
 import io.qameta.allure.Step;
 
+import java.util.Objects;
+
 public class Phone {
 
     private String type;
     private String os;
     private String provider;
-
-
 
     public String setType(String type) {
         this.type = type;
@@ -31,6 +31,22 @@ public class Phone {
         return "You finished your talk";
     }
 
+    @Override
+    public boolean equals(Object o) {
+
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Phone phone = (Phone) o;
+        return Objects.equals(type, phone.type) &&
+                Objects.equals(os, phone.os) &&
+                Objects.equals(provider, phone.provider);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(type, os, provider);
+    }
+
     @Step
     public String nameOfYourProvider(String type){
        switch (type){
@@ -43,11 +59,7 @@ public class Phone {
 
        }
 
+
+
     }
-
-
-
-
-
-
 }

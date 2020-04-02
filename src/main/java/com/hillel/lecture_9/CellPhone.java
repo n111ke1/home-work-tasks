@@ -2,11 +2,14 @@ package com.hillel.lecture_9;
 
 import io.qameta.allure.Step;
 
+import java.util.Objects;
+
 
 public class CellPhone extends Phone {
 
  private String textMessage;
  private String model;
+
 
  @Step
  public String setTextMessage(String textMessage) {
@@ -44,6 +47,8 @@ if(model.equalsIgnoreCase("iphone")||model.equalsIgnoreCase("samsung")){
   return "We don't know this model";
  }
   }
+
+
 
 
  @Override
