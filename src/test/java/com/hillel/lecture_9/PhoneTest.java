@@ -59,10 +59,6 @@ public class PhoneTest {
 
     }
 
-
-
-
-
     @DataProvider(name = "phoneType")
     public static Object[][] phoneType() {
         return new Object[][]{
