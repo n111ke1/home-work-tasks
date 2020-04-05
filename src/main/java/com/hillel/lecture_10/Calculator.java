@@ -5,6 +5,8 @@ abstract class Calculator {
     private int number2;
     private int percentage;
 
+    abstract String getResult(Object object);
+
     public int getPercentage() {
         return percentage;
     }
@@ -48,6 +50,4 @@ abstract class Calculator {
         return this.number1 / this.number2;
     }
 
-
-    abstract String getResult(Object object);
 }
