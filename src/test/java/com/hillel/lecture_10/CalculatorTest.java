@@ -20,7 +20,7 @@ public class CalculatorTest {
 
     @Test
     public void engineerCalculatorBasicFunctionTest(){
-        Engineer_calculator ec = new Engineer_calculator();
+        EngineerCalculator ec = new EngineerCalculator();
         ec.setInteger1(1);
         ec.setInteger2(3);
         Assert.assertEquals(ec.getResult(ec.add()),"Result in EngineerCalculator equal: " +ec.add());
@@ -31,10 +31,10 @@ public class CalculatorTest {
     }
     @Test(dataProvider = "number")
     public void engineerCalculatorSpecialFunctionTest(double number, double res) {
-        Engineer_calculator ec = new Engineer_calculator();
-        Assert.assertEquals(ec.getResult(ec.getCos(number)), "Result in EngineerCalculator equal: " +ec.getCos(number));
-        Assert.assertEquals(ec.getResult(ec.getSin(30)), "Result in EngineerCalculator equal: " +ec.getSin(30) );
-        Assert.assertEquals(ec.getResult(ec.getSqrt(number)), "Result in EngineerCalculator equal: " +res);
+        EngineerCalculator ec = new EngineerCalculator();
+        Assert.assertEquals(ec.getResult(ec.cos(number)), "Result in EngineerCalculator equal: " +ec.cos(number));
+        Assert.assertEquals(ec.getResult(ec.sin(30)), "Result in EngineerCalculator equal: " +ec.sin(30) );
+        Assert.assertEquals(ec.getResult(ec.sqrt(number)), "Result in EngineerCalculator equal: " +res);
     }
 
 

@@ -1,23 +1,23 @@
 package com.hillel.lecture_10;
 
-public class Engineer_calculator extends Calculator {
+public class EngineerCalculator extends Calculator {
 
     @Override
     String getResult(Object object) {
         return "Result in EngineerCalculator equal: " + object;
     }
 
-    public String getCos(double number){
+    public String cos(double number){
        double num = setInteger1(number);
         return String.valueOf(Math.cos(num));
     }
 
-    public String getSin(double number){
+    public String sin(double number){
         double num = setInteger1(number);
         return String.valueOf(Math.sin(num));
     }
 
-    public String getSqrt(double number){
+    public String sqrt(double number){
         double num = setInteger1(number);
         return String.valueOf(Math.sqrt(num));
     }
