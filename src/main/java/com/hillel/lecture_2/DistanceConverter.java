@@ -5,7 +5,7 @@ import io.qameta.allure.Step;
 /**
  * Created by alpa on 10/17/19
  */
-public class DistanceConverter {
+public class DistanceConverter  {
 
     @Step
     public double metersToInches(double meters) {
