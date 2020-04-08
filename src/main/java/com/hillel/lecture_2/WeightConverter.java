@@ -17,8 +17,7 @@ public class WeightConverter {
     @Step
     public double poundsToKilograms(double pounds) {
 //        TODO implements result
-        double result = pounds / 2.2046;
-        return result;
+        return pounds / 2.2046;
     }
 
 }
