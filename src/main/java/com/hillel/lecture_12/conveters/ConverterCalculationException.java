@@ -5,7 +5,6 @@ public class ConverterCalculationException extends  Exception {
     public double getNumber(){return value;}
 
     public ConverterCalculationException(double value) {
-
         super("Value should be great than 0");
     }
 }

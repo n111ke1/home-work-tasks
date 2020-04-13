@@ -1,6 +1,6 @@
 package com.hillel.lecture_11;
 
-public class MetersToInches implements Converter {
+public class MetersToInches implements ConverterInterface {
 
     @Override
     public double converter(double value) {

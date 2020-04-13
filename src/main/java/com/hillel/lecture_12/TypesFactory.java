@@ -1,10 +1,14 @@
 package com.hillel.lecture_12;
 
-public class TypesFactory {
+public class TypesFactory  {
+        ConverterType converterType;
 
-    public Object createConverterTypes(ConverterType converterType){
+    public TypesFactory(ConverterType converterType) {
+        this.converterType = converterType;
+    }
 
-        switch (converterType){
+    public Type createConverterTypes(){
+        switch (this.converterType){
             case SPEED:
                return new ConverterSpeedFactory();
             case WEIGHT:
@@ -13,9 +17,7 @@ public class TypesFactory {
                return new ConverterDistanceFactory();
             case TEMPERATURE:
                return new ConverterTemparatureFactory();
-            default: return  null;
         }
-
-
+        return null;
     }
 }

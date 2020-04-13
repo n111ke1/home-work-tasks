@@ -1,6 +1,6 @@
 package com.hillel.lecture_11;
 
-public class SpeedKmToMi implements Converter {
+public class SpeedKmToMi implements ConverterInterface {
 
 
 

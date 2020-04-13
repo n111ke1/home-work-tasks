@@ -6,7 +6,7 @@ package com.hillel.lecture_11;
 public class ConverterTypeFactory {
 
 
-    public Converter converterType(String convertType) {
+    public ConverterInterface converterType(String convertType) {
         switch (convertType) {
             case "metersToInches": return new MetersToInches();
             case "inchesToMeters": return new InchesToMeters();

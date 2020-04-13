@@ -1,6 +1,6 @@
 package com.hillel.lecture_11;
 
-public class CelsiusToFahrenheit implements Converter {
+public class CelsiusToFahrenheit implements ConverterInterface {
 
 
     @Override

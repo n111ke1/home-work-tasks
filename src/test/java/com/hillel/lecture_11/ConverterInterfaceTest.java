@@ -7,7 +7,7 @@ import static org.testng.Assert.assertEquals;
 /**
  * Created by alpa on 10/17/19
  */
-public class ConverterTest {
+public class ConverterInterfaceTest {
 
 
     private ConverterTypeFactory converter = new ConverterTypeFactory();
